@@ -17,6 +17,6 @@
 >>9. **do** Append $p_i$ to $L_{lower}$.
 >>>10. **while** $L_{lower}$ contains more than 2 points and the last three points in $L_{lower}$ do not make a right turn
 >>>>11. **do** Delete the middle of the last three points from $L_{lower}$.
->12. Remove the first and the last point from $L{lower}$ to avoid duplication of the points where the upper and lower hull meet.
+>12. Remove the first and the last point from $L_{lower}$ to avoid duplication of the points where the upper and lower hull meet.
 >13. Append $L_{lower}$ to $L_{upper}$, and call the resulting list $L$.
 >14. **return** $L$
