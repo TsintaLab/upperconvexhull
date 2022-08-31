@@ -21,7 +21,7 @@
 >13. Append $L_{lower}$ to $L_{upper}$, and call the resulting list $L$.
 >14. **return** $L$
 
-### How to determine right turn, left turn or collinear
+### How to determine right turn?
 
 #### Method one
 
@@ -33,3 +33,12 @@ For three points $P1=(x1,y1)$, $P2=(x2,y2)$ and $P3=(x3,y3)$, compute the $z-coo
 This reasoning assumes counter-clockwise numbered points.
 
 [^1]: Lying on or passing through the same straight line. Having axes lying end to end in a straight line collinear antenna elements.
+
+#### Method two
+
+Using the slope
+
+Slope of line segment $(p1, p2): σ = \frac{(y2 - y1)}{(x2 - x1)}$
+Slope of line segment $(p2, p3): τ = \frac{(y3 - y2)}{(x3 - x2)}$
+
+If  $σ > τ$, the orientation is clockwise (right turn)
