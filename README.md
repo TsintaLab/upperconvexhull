@@ -20,3 +20,16 @@
 >12. Remove the first and the last point from $L_{lower}$ to avoid duplication of the points where the upper and lower hull meet.
 >13. Append $L_{lower}$ to $L_{upper}$, and call the resulting list $L$.
 >14. **return** $L$
+
+### How to determine right turn, left turn or collinear
+
+#### Method one
+
+For three points $P1=(x1,y1)$, $P2=(x2,y2)$ and $P3=(x3,y3)$, compute the $z-coordinate$ of the **cross-product of the vectors $\vec{P_1P_2}$ and $\vec{P_1P_3}$**, which is given by the expression $(x2−x1)(y3−y1)−(y2−y1)(x3−x1)$. 
+* If the result is 0, the points P1, P2 and P3 are **collinear[^1]**.
+* If the result is positive, the three points constitute a "left turn" (or a counter-clockwise orientation).
+* Otherwise the points represent a "right turn" (or a clockwise orientation).
+
+This reasoning assumes counter-clockwise numbered points.
+
+[^1]: Lying on or passing through the same straight line. Having axes lying end to end in a straight line collinear antenna elements.
